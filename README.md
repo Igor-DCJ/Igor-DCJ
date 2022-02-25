@@ -20,5 +20,5 @@ Here are some ideas to get you started:
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Igor-DCJ&layout=compact&langs_count=7&theme=dracula"/>
 </div>
 
-   ![Snake animation](https://github.com/Igor-DCJ/Igor-DCJ/blob/output/github-contribution-grid-main.svg)
+   ![Snake animation](https://github.com/Igor-DCJ/Igor-DCJ/blob/output/github-contribution-grid-snake.svg)
  
