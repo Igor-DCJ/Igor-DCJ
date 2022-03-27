@@ -3,14 +3,11 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       
 
-     <style>
-       .container {
-
+ <style>
+   .container {
     position: relative;
     top: 350px;
-
-
-}
+    }
 
 .cup {
     position: relative;
@@ -215,25 +212,7 @@
       
     <div class="container">
         <div class="plate"></div>
-        <div class="cup">
-            <div class="top">
-                <div class="vapor">
-                    <span style="--i:1"></span>
-                    <span style="--i:14"></span>
-                    <span style="--i:3"></span>
-                    <span style="--i:5"></span>
-                    <span style="--i:20"></span>
-                    <span style="--i:6"></span>
-
-                </div>
-                <div class="circle">
-                    <div class="coffe">
-                    </div>
-                </div>
-            </div>
-          <defs><div class="handle"></div></defs>
-          </div>
-      </div>
+       
     </div>
 
       
