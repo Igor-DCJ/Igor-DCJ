@@ -230,7 +230,6 @@ body {
       
 
       
- <body>
     <div class="container">
         <div class="plate"></div>
         <div class="cup">
@@ -253,7 +252,7 @@ body {
         </div>
 
     </div>
-</body>
+
       
       
   </foreignObject>
