@@ -1,0 +1,238 @@
+    <div class="container">
+        <div class="plate"></div>
+        <div class="cup">
+            <div class="top">
+                <div class="vapor">
+                    <span style="--i:1"></span>
+                    <span style="--i:14"></span>
+                    <span style="--i:3"></span>
+                    <span style="--i:5"></span>
+                    <span style="--i:20"></span>
+                    <span style="--i:6"></span>
+
+                </div>
+                <div class="circle">
+                    <div class="coffe">
+                    </div>
+                </div>
+            </div>
+            <div class="handle"></div>
+        </div>
+
+    </div>
+
+  <style>
+    * {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+  .container {
+
+      position: relative;
+      top: 350px;
+
+
+  }
+
+  .cup {
+      position: relative;
+      width: 85px; /* é para definir a largura da xicara */
+      height: 75px; /* é para definir a altura da xicara */
+      background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+      animation: esfriar 5s linear infinite;
+      transform-origin: bottom center;
+
+      box-shadow: 0 70px 30px -15px  rgba(0, 0, 0, 0.55);
+
+
+  }
+
+  .top {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+      border-radius: 45%;
+  }
+
+  .circle {
+      position: absolute;
+      top: 5px;
+      left: 8px;
+      width: calc(100% - 15px);
+      height: 25px; /* define o tamanho da boca da xicara */
+      background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+      border-radius: 50%;
+      box-sizing: border-box;
+      overflow: hidden;
+
+  }
+
+  .coffe {
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#362625,#160d09);
+      border-radius: 50%;
+      animation: cafe 5s linear infinite;
+      transform-origin: top center;
+
+  }
+
+  .handle {
+      position: absolute;
+      right: -21px;
+      top: 0px;
+      width: 48px;
+      height: 60px;
+      border: 7px solid #dcdcdc;
+      border-left: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-radius: 50%;
+      transform: rotate(42deg);
+  }
+
+  .plate {
+      position: absolute;
+      bottom: -60px; /*distancia do prato com a xicara   */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 60px;
+      background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+      border-radius: 50%;
+      box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);/* Sombra do prato */
+  }
+
+  .plate::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      border-radius: 50%;
+      background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+
+
+  }
+
+  .plate::after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      border-radius: 50%;
+      background: radial-gradient(rgb(0, 0, 0, 0.2)25%, transparent, transparent);
+
+  }
+
+  .vapor {
+      position: relative;
+      display: flex;
+      z-index: 1;
+      padding: 0 20px;
+  }
+
+  .vapor span {
+      position: relative;
+      bottom: 50px;
+      display: block;
+      margin: 0 2px 50px;
+      min-width: 8px;
+      height: 120px;
+      background : #fff;
+      border-radius: 50%;
+      animation: vapor 5s linear infinite;
+      opacity: 0;
+      filter: blur(8px);
+      animation-delay: calc(var(--i)*-0.5s);
+  }
+
+  @keyframes vapor{
+      0%
+      {
+          transform: translateY(0)scaleX(1);
+          opacity: 0;
+      }
+      15%{
+          opacity:1;
+      }
+      50%
+      {
+          transform: translateY(-150px)scaleX(5);
+      }
+      85%{
+          opacity:0;
+      }
+      100%
+      {
+          transform: translateY(-300px)scaleX(10);
+      }
+  }
+
+  @keyframes esfriar{
+      0%
+      {
+          transform:rotate(0deg);
+      }
+
+      25%{
+          transform:rotate(5deg);
+
+      }
+
+      50%
+      {
+          transform:rotate(0deg);
+      }
+
+      75%{
+          transform:rotate(-5deg);
+
+      }
+
+      100%
+      {
+          transform:rotate(0deg);
+      }
+  }
+
+  @keyframes cafe{
+      0%
+      {
+          transform:rotate(0deg);
+      }
+
+      25%{
+          transform:rotate(10deg);
+
+      }
+
+      50%
+      {
+          transform:rotate(0deg);
+      }
+
+      75%{
+          transform:rotate(-10deg);
+
+      }
+
+      100%
+      {
+          transform:rotate(0deg);
+      }
+  }
+  </style>
