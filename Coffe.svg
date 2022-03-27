@@ -231,10 +231,9 @@
                     </div>
                 </div>
             </div>
-            <div class="handle"></div>
-        </div>
-
-    </div>
+          <defs><div class="handle"></div></defs>
+          </div>
+      </div>
     </div>
 
       
