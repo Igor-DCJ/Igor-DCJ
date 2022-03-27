@@ -1,3 +1,10 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Animação do Cafézinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <div class="container">
         <div class="plate"></div>
         <div class="cup">
@@ -20,6 +27,7 @@
         </div>
 
     </div>
+</body>
 
   <style>
     * {
