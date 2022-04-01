@@ -1,4 +1,7 @@
 ### Eae Blz? ✌  Eu sou Igor Dias !
+<p align="right">
+  <img src="https://github.com/Igor-DCJ/Igor-DCJ/blob/main/Coffe.svg" width="100%" height="150">
+</p>
 
 <!--
 **Igor-DCJ/Igor-DCJ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
