@@ -100,7 +100,7 @@
         .plate {
             position: absolute;
             bottom: -60px; /*distancia do prato com a xicara   */
-            left: 0%;
+            left: -10%;
             transform: translateX(-50%);
             width: 150px;
             height: 60px;
