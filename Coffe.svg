@@ -10,6 +10,14 @@
 
         <div xmlns="http://www.w3.org/1999/xhtml">
   <style>
+      
+        body {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vh;
+            background: #607d8b;
+        }
         
         .container {
 
